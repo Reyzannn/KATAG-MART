@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATAG MART</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+    <!-- Floating particles -->
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">KM</div>
+                <div class="logo-text">KATAG MART</div>
+            </div>
+            
+            <nav class="header-nav">
+                <div class="nav-links">
+                    <a href="#beranda" class="active">BERANDA</a>
+                    <a href="#berita">BERITA</a>
+                    <a href="#lacak">LACAK PESANAN</a>
+                </div>
+                
+                <div class="search-container">
+                    <div class="search-bar">
+                        <span>🔍</span>
+                        <input type="text" placeholder="Cari produk..." id="searchInput">
+                        <datalist>
+                            <option value="Mobile Legends">Mobile Legends</option>
+                            <option value="Free Fire">Free Fire</option>
+                            <option value="Roblox">Roblox</option>
+                            <option value="PUBGM">Pubgm</option>
+                            <option value="Honor Of Kings">HOK</option>
+                        </datalist>
+            </nav>
+        </header>
+
+        <!-- Secondary Navigation -->
+        <nav class="secondary-nav">
+            <div class="nav-links">
+                <a href="#discover" class="active">Discover</a>
+                <a href="#games">Semua Game</a>
+            </div>
+        </nav>
+
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">MYSTERY SHOP</h1>
+                    <h2 class="hero-subtitle">DATANG LAGI!</h2>
+                    <p class="hero-description">DAPATKAN DISKON HINGGA 90%</p>
+                </div>
+                <div class="hero-characters">
+                    <!-- Banner Slider Start -->
+                    <div class="banner-slider">
+                        <button class="slider-arrow left" onclick="moveSlide(-1)">&#10094;</button>
+                        <div class="slider-images">
+                            <img src="image/ff.jpg" class="slider-img active" alt="Free Fire">
+                            <img src="image/ml.jpg" class="slider-img" alt="Mobile Legends">
+                            <img src="image/pubgm.jpg" class="slider-img" alt="PUBG Mobile">
+                        </div>
+                        <button class="slider-arrow right" onclick="moveSlide(1)">&#10095;</button>
+                    </div>
+                    <!-- Banner Slider End -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="section-title">TEMUKAN PRODUK FAVORIT</h2>
+        </div>
+        
+        <!-- Category Tabs -->
+        <div class="category-tabs">
+            <button class="tab active" data-category="populer">Populer</button>
+            <button class="tab" data-category="games">Games</button>
+            <button class="tab" data-category="voucher">Voucher</button>
+            <button class="tab" data-category="tagihan">Tagihan</button>
+        </div>
+
+        <!-- Games Grid -->
+        <div class="games-grid" id="gamesGrid">
+            <div class="game-card" data-category="populer games">
+                <div class="game-image">
+                    <a href="ml.html">
+                    <div class="game-logo"><img src="image/ml.jpg" alt=""></div>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Mobile Legends</div>
+                    <div class="game-developer">Moonton</div>
+                    </a>    
+                </div>
+            </div>
+
+            <div class="game-card" data-category="populer games">
+                <div class="game-image">
+                    <div class="game-logo"><img src="image/ff.jpg" alt=""></div>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Free Fire</div>
+                    <div class="game-developer">Garena</div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="populer games">
+                <div class="game-image">
+                    <div class="game-logo"><img src="image/HOK.jpg" alt=""></div>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Honor of Kings</div>
+                    <div class="game-developer">TiMi Studio</div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="games">
+                <div class="game-image" style="background: linear-gradient(45deg, #2980b9, #3498db);">
+                    <div class="game-logo"><img src="image/mcgg.jpg" alt=""></div>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Magic Chess: GOGO</div>
+                    <div class="game-developer">Moonton</div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="populer games">
+                <div class="game-image">
+                    <div class="game-logo"><img src="image/pubgm.jpg" alt=""></div>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">PUBG Mobile</div>
+                    <div class="game-developer">All Region</div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="games">
+                <div class="game-image">
+                    <div class="game-logo"><img src="image/valo.png" alt=""></div>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Valorant</div>
+                    <div class="game-developer">Riot Games</div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="populer games">
+                <div class="game-image">
+                    <div class="game-logo"><img src="image/GI.jpg" alt=""></div>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Genshin Impact</div>
+                    <div class="game-developer">HoYoverse</div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="games">
+                <div class="game-image">
+                <a href="roblox.html">
+                    <div class="game-logo"><img src="image/Roblox.png" alt=""></div>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Roblox</div>
+                    <div class="game-developer">Roblox Corp</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="populer games">
+                <div class="game-image">
+                    <div class="game-logo"><img src="image/cod .jpg" alt=""></div>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Call of Duty Mobile</div>
+                    <div class="game-developer">Garena</div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="voucher">
+                <div class="game-image">
+                    <div class="game-logo"><img src="image/steam.jpg" alt=""></div>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Steam Wallet</div>
+                    <div class="game-developer">Valve</div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="voucher">
+                <div class="game-image" style="background: linear-gradient(45deg, #e67e22, #d35400);">
+                    <div class="game-logo">GOOGLE</div>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Google Play</div>
+                    <div class="game-developer">Google</div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="tagihan">
+                <div class="game-image" style="background: linear-gradient(45deg, #3498db, #2980b9);">
+                    <div class="game-logo">PLN</div>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Token PLN</div>
+                    <div class="game-developer">PLN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+    // Simple slider logic
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slider-img');
+    function showSlide(idx) {
+        slides.forEach((img, i) => {
+            img.classList.toggle('active', i === idx);
+        });
+    }
+    function moveSlide(dir) {
+        currentSlide += dir;
+        if (currentSlide < 0) currentSlide = slides.length - 1;
+        if (currentSlide >= slides.length) currentSlide = 0;
+        showSlide(currentSlide);
+    }
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => showSlide(currentSlide));
+    </script>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <section>
+            <div class="footer-left">
+                <h1>LOGO</h1>
+                <div class="credits-cards">
+                    <img src="images/Ovo.png" alt="">
+                    <img src="images/Dana.png" alt="">
+                    <img src="images/Gopay.png" alt="">
+                </div>
+                
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p><span>Indonesia</span> Jawa Timur, Surabaya</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+62-896-7238-6070</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="#">KATAG STORE</a></p>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-about">
+                    <span>About ?</span>
+                    <br>
+                    <br>
+                    Ini adalah web Termurah, sebuah platform untuk topup game dan pembelian voucher digital. Kami menyediakan berbagai produk dengan harga terjangkau dan layanan yang cepat.
+                    <br>
+                    <br>
+                    Kami berkomitmen untuk memberikan pengalaman belanja yang mudah dan aman bagi para gamer di Indonesia. Dengan berbagai pilihan produk dan metode pembayaran yang fleksibel, kami siap memenuhi kebutuhan gaming Anda.
+                </p>
+                <div class="footer-media">
+                    <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a wa><i class="fa-brands fa-whatsapp"></i></a>
+                
+                </div>
+                <P class="footer-copyright">
+                    &copy;2025 KATAG STORE</P>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>

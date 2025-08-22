@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Top-up - KATAG MART</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <div class="particles" id="particles"></div>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="web top up.html" class="logo-link">
+                <div class="logo">
+                    <div class="logo-icon">KM</div>
+                    <div class="logo-text">KATAG MART</div>
+                </div>
+                </a>
+                <div class="search-container">
+                    <div class="search-icon">🔍</div>
+                    <input type="text" class="search-input" placeholder="Cari Game atau Voucher">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-items">
+                <a href="web top up.html" class="nav-item active">🏠 Beranda</a>
+                <a href="#" class="nav-item">📰 Berita</a>
+                <a href="#" class="nav-item">📦 Lacak Pesanan</a>
+                <a href="#" class="nav-item">📄 Artikel</a>
+                <a href="#" class="nav-item">🎭 Kalkulator</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+           
+            <div class="hero-banner">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Top up</h1>
+                        <h2>ROBUX SELURUH INDONESIA</h2>
+                        <p>Top up Robux hanya untuk kalian yang ada di region indonesia lebih cepat lebih akurat meskipun event berlangsung</p>
+                        <a href="#form" class="hero-btn">Beli Sekarang!</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="image/Roblox.png" class="hero-image"
+                    ></div>
+                </div>
+            </div>
+
+            
+            <div class="game-section">
+                <div class="game-selector">
+                    <div class="game-info">
+                        <div class="game-icon"><img src="image/Roblox.png" alt=""></div>
+                        <div class="game-details">
+                            <h3>Roblox</h3>
+                            <p>Roblox Corp</p>
+                        </div>
+                    </div>
+                    <div class="game-features">
+                        <div class="feature">
+                            <span>⚡</span>
+                            <span>Proses Cepat</span>
+                        </div>
+                        <div class="feature">
+                            <span>📱</span>
+                            <span>Layanan Chat 24/7</span>
+                        </div>
+                        <div class="feature">
+                            <span>💳</span>
+                            <span>Pembayaran Aman!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-steps" id="form">
+                <div class="steps-container">
+                    
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">1</div>
+                            <div class="step-title">Masukkan Data Akun</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Username </label>
+                            <input type="text" class="form-input" placeholder="Masukkan User ID" id="userId">
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">2</div>
+                            <div class="step-title">Pilih item</div>
+                        </div>
+                        <div class="packages-grid">
+                            <div class="package-card" onclick="selectPackage(this, '5 (5+0) Robux', 1350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">50 Robux</div>
+                                <div class="package-price">Rp 8.500</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '10 (9+1) Robux', 2880)">
+                                <div class="robux-icon"><img src="image/robux.png"></div>
+                                <div class="robux-name">80 Robux</div>
+                                <div class="package-price">Rp 13.500 </div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png"></div>
+                                <div class="robux-name">100 Robux</div>
+                                <div class="package-price">Rp 15.500</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">130 Robux</div>
+                                <div class="package-price">Rp 19.500</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">150 Robux</div>
+                                <div class="package-price">Rp 22.500</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">180 Robux</div>
+                                <div class="package-price">Rp 26.200</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">200 Robux</div>
+                                <div class="package-price">Rp 30.200</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">230 Robux</div>
+                                <div class="package-price">Rp 33.200</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">250 Robux</div>
+                                <div class="package-price">Rp 36.500</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">280 Robux</div>
+                                <div class="package-price">Rp 40.500</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">300 Robux</div>
+                                <div class="package-price">Rp 43.000</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">330 Robux</div>
+                                <div class="package-price">Rp 47.200</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">350 Robux</div>
+                                <div class="package-price">Rp 50.500</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">380 Robux</div>
+                                <div class="package-price">Rp 55.500</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">400 Robux</div>
+                                <div class="package-price">Rp 57.500</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">430 Robux</div>
+                                <div class="package-price">Rp 62.500</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">450 Robux</div>
+                                <div class="package-price">Rp 64.500</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">480 Robux</div>
+                                <div class="package-price">Rp 68.500</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">500 Robux</div>
+                                <div class="package-price">Rp 73.000</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">800 Robux</div>
+                                <div class="package-price">Rp 114.000</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">1000 Robux</div>
+                                <div class="package-price">Rp 143.500</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">1050 Robux</div>
+                                <div class="package-price">Rp 150.000</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">1250 Robux</div>
+                                <div class="package-price">Rp 180.000</div>
+                            </div>
+                            <div class="package-card" onclick="selectPackage(this, '19 (17+2) Robux', 5350)">
+                                <div class="robux-icon"><img src="image/robux.png" alt=""></div>
+                                <div class="robux-name">COSTUM NOMINAL ROBUX SENDIRI</div>
+                                <div class="package-price">Rp -</div>
+                            </div>
+                        </div>
+                </div>
+
+                
+                <div class="order-summary">
+                    <h2 class="summary-title">📋 Ulasan dan rating</h2>
+                    
+                    <div class="rating-section">
+                        <div class="rating">4.99</div>
+                        <div class="stars">★★★★★</div>
+                        <div class="rating-text">Berdasarkan total 3.908 rating</div>
+                    </div>
+
+                    <div class="help-section">
+                        <div class="help-title">
+                            <span>🤔</span>
+                            <span>Butuh Bantuan?</span>
+                        </div>
+                        <div>Kamu bisa hubungi admin disini.<a href="https://wa.me/6287764136431" 
+                                    style="color: #ffd700;;"><i class="fa-brands fa-whatsapp"></i></a>
+                                </div>
+                    </div>
+
+                    <div class="empty-state" id="orderSummary">
+                        Belum ada item produk yang dipilih.
+                    </div>
+
+                    <button class="checkout-btn" id="checkoutBtn" onclick="processOrder()" disabled>
+                        💬 Pesan Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let selectedPackage = null;
+        let selectedPrice = 0;
+
+        function selectPackage(element, name, price) {
+           
+            document.querySelectorAll('.package-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+
+            
+            element.classList.add('selected');
+            
+            selectedPackage = name;
+            selectedPrice = price;
+            
+            updateOrderSummary();
+        }
+
+        function updateOrderSummary() {
+            const orderSummary = document.getElementById('orderSummary');
+            const checkoutBtn = document.getElementById('checkoutBtn');
+            
+            if (selectedPackage) {
+                orderSummary.innerHTML = `
+                    <div class="summary-row">
+                        <span>${selectedPackage}</span>
+                        <span>Rp ${selectedPrice.toLocaleString('id-ID')}</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Biaya Admin</span>
+                        <span>Rp 1.500</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span>Rp ${(selectedPrice + 1500).toLocaleString('id-ID')}</span>
+                    </div>
+                `;
+                checkoutBtn.disabled = false;
+            } else {
+                orderSummary.innerHTML = '<div class="empty-state">Belum ada item produk yang dipilih.</div>';
+                checkoutBtn.disabled = true;
+            }
+        }
+
+        function processOrder() {
+            const userId = document.getElementById('userId').value;
+            
+            
+            if (!userId || !server) {
+                alert('❌ Mohon lengkapi User ID ');
+                return;
+            }
+            
+            if (!selectedPackage) {
+                alert('❌ Mohon pilih paket Robux terlebih dahulu!');
+                return;
+            }
+            
+            alert(`✅ Pesanan berhasil!\n\nGame: Roblox\nUser ID: ${userId}\nPaket: ${selectedPackage}\nTotal: Rp ${(selectedPrice + 1500).toLocaleString('id-ID')}\n\nTerimakasih telah berbelanja di KATAG MART!`);
+        }
+
+        
+        document.querySelector('.hero-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+        });
+
+       
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            if (!particlesContainer) return;
+            particlesContainer.innerHTML = '';
+            const count = 40;
+            for (let i = 0; i < count; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                p.style.left = Math.random() * 100 + 'vw';
+                p.style.top = Math.random() * 100 + 'vh';
+                p.style.animationDuration = (4 + Math.random() * 4) + 's';
+                p.style.opacity = 0.5 + Math.random() * 0.5;
+                particlesContainer.appendChild(p);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', createParticles);
+        window.addEventListener('resize', createParticles);
+    </script>
+</body>
+</html>
